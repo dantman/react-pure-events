@@ -3,8 +3,9 @@ React Pure Events
 [![npm][npm-badge]][npm]
 [![MIT][license-badge]][license]
 [![dependencies][dependencies-badge]][dependencies]
-[![peerDependencies][peerDependencies-badge]][peerDependencies]
 [![devDependencies][devDependencies-badge]][devDependencies]
+[![Build Status][travis-ci-badge]][travis-ci]
+[![Codecov][codecov-badge]][codecov]
 
 [npm-badge]: https://img.shields.io/npm/v/react-pure-events.svg
 [npm]: https://www.npmjs.com/package/react-pure-events
@@ -12,10 +13,12 @@ React Pure Events
 [license]: https://github.com/dantman/react-pure-events/blob/master/LICENSE
 [dependencies-badge]: https://img.shields.io/david/dantman/react-pure-events.svg
 [dependencies]: https://david-dm.org/dantman/react-pure-events
-[peerDependencies-badge]: https://img.shields.io/david/peer/dantman/react-pure-events.svg
-[peerDependencies]: https://david-dm.org/dantman/react-pure-events?type=peer
 [devDependencies-badge]: https://img.shields.io/david/dev/dantman/react-pure-events.svg
 [devDependencies]: https://david-dm.org/dantman/react-pure-events?type=dev
+[travis-ci-badge]: https://img.shields.io/travis/dantman/react-pure-events.svg
+[travis-ci]: https://travis-ci.org/dantman/react-pure-events
+[codecov-badge]: https://img.shields.io/codecov/c/github/dantman/react-pure-events.svg
+[codecov]: https://codecov.io/gh/dantman/react-pure-events
 
 A HOC wrapper that makes events props passed to React PureComponents pure.
 
