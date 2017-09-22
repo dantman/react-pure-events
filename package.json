@@ -1,0 +1,78 @@
+{
+  "name": "react-pure-events",
+  "version": "1.0.0",
+  "description": "A HOC wrapper that makes events props passed to React PureComponents pure",
+  "main": "lib/index.js",
+  "files": [
+    "lib",
+    "src",
+    ".eslintrc.json"
+  ],
+  "scripts": {
+    "clean": "rm -rf lib/",
+    "precommit": "lint-staged",
+    "build": "babel src/ -d lib/",
+    "test": "npm run jest && npm run lint",
+    "codecov": "codecov",
+    "jest": "jest",
+    "lint": "eslint --fix .",
+    "prepublish": "npm run clean && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dantman/react-pure-events.git"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "react-native",
+    "pure-component",
+    "pure"
+  ],
+  "author": "Redwerks (http://redwerks.org)",
+  "contributors": [
+    "Daniel Friesen <d@danf.ca> (http://danf.ca)"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dantman/react-pure-events/issues"
+  },
+  "homepage": "https://github.com/dantman/react-pure-events#readme",
+  "dependencies": {
+    "hoist-non-react-methods": "^1.0.2",
+    "lodash": "^4.17.4"
+  },
+  "peerDependencies": {
+    "react": ">= 15 || ^16.0.0-alpha.12"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.0.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "eslint": "^4.7.2",
+    "eslint-plugin-babel": "^4.1.2",
+    "eslint-plugin-jest": "^21.1.0",
+    "eslint-plugin-react": "^7.3.0",
+    "husky": "^0.14.3",
+    "jest": "^21.1.0",
+    "lint-staged": "^4.2.2",
+    "react": "^16.0.0-rc.3",
+    "react-test-renderer": "^16.0.0-rc.3"
+  },
+  "jest": {
+    "notify": true,
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ]
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  }
+}
