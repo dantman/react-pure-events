@@ -6,6 +6,7 @@ React Pure Events
 [![devDependencies][devDependencies-badge]][devDependencies]
 [![Build Status][travis-ci-badge]][travis-ci]
 [![Codecov][codecov-badge]][codecov]
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fdantman%2Freact-pure-events.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fdantman%2Freact-pure-events?ref=badge_shield)
 
 [npm-badge]: https://img.shields.io/npm/v/react-pure-events.svg
 [npm]: https://www.npmjs.com/package/react-pure-events
@@ -89,3 +90,6 @@ class MyComponent extends PureComponent {
 
 export default guardPureEventProps('onEvent', 'onEvent2')(MyComponent);
 ```
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fdantman%2Freact-pure-events.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fdantman%2Freact-pure-events?ref=badge_large)
