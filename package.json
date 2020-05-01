@@ -16,7 +16,8 @@
     "codecov": "codecov",
     "jest": "jest",
     "lint": "eslint --fix .",
-    "prepublish": "npm run clean && npm run build"
+    "prepublish": "npm run snyk-protect && npm run clean && npm run build",
+    "snyk-protect": "snyk protect"
   },
   "repository": {
     "type": "git",
@@ -40,7 +41,8 @@
   "homepage": "https://github.com/dantman/react-pure-events#readme",
   "dependencies": {
     "hoist-non-react-methods": "^1.0.2",
-    "lodash": "^4.17.4"
+    "lodash": "^4.17.4",
+    "snyk": "^1.316.1"
   },
   "peerDependencies": {
     "react": ">= 15 || ^16.0.0-alpha.12"
@@ -74,5 +76,6 @@
       "eslint --fix",
       "git add"
     ]
-  }
+  },
+  "snyk": true
 }
